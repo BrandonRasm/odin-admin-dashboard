@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr .5fr;
+}
+
+.sidebar {
+    background-color: teal;
+    grid-row: span 3;
+}
+
+.header {
+    background-color: green;
+}
+
+.content {
+    background-color: aqua;
+}
+
+.footer {
+    background-color: pink;
+}
