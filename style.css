@@ -13,7 +13,14 @@
 
 .sidebar {
     background-color: teal;
+    padding: 16px;
     grid-row: span 3;
+    display: grid;
+    grid-template-rows: auto .3fr .3fr 1fr;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+
 }
 
 .header {
@@ -34,15 +41,16 @@
 }
 
 li{
+    margin: 20px;
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 4px
+    gap: 12px
 }
 
 .nav-title {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 4px;
+    gap: 12px;
     align-items:center;
 }
 
