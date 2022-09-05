@@ -75,9 +75,33 @@
     gap: 20px;
 }
 
+
+
+
+
 .content {
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.projects {
+    background-color: lightpink;
+    grid-row: span 2;
+}
+.announcements {
+    background-color: bisque;
+}
+
+.trending {
+    background-color: lightgreen;
+}
+
+
+
+
+
 
 .footer {
     background-color: pink;
