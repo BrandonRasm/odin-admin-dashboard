@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<div class="container">
-	    <div class="sidebar">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
             <div class="nav-title">
                 <img class="title-icon" src="Images/view-dashboard.svg" alt="dashboard icon">
                 Dashboard
@@ -39,7 +41,7 @@
                         <div class="text">Communities</div>
                     </li>
                 </ul>
-            </div>        
+            </div>
             <div class="nav-extras">
                 <ul>
                     <li>
@@ -58,15 +60,30 @@
             </div>
         </div>
         <div class="header">
-            <div class="header-search">
-                <img src="" alt="" class="search-icon">
+            <form class="header-search">
+                <img src="Images/magnify.svg" alt="search icon" class="icon">
+                <input type="text" id="search" placeholder="search...">
+            </form>
+            <div class="header-icons">
+                <img src="Images/bell.svg" alt="bell icon" class="icon">
+                <img src="Images/gamer1.jpg" alt="profile picture" class="user-pic profile-pic-small">
+                <div class="user-name">Morgan Oakley</div>
             </div>
-            <div class="header-icons"></div>
-            <div class="header-welcome"></div>
-            <div class="header-buttons"></div>
+            <div class="header-welcome">
+                <img src="Images/gamer1.jpg" alt="profile picture" class="user-pic profile-pic-large">
+                <div class="welcome-text">Hi there,</div>
+                <div class="user-name">Morgan Oakley</div>
+                <div class="user-tag">(@morgan)</div>
+            </div>
+            <div class="header-buttons">
+                <button class="new button">New</button>
+                <button class="upload button">Upload</button>
+                <button class="share button">Share</button>
+            </div>
         </div>
         <div class="content"></div>
         <div class="footer"></div>
-	</div>
-  </body>
+    </div>
+</body>
+
 </html>
