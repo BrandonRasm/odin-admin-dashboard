@@ -166,6 +166,28 @@
     background-color: lightgreen;
 }
 
+.trending .wrapper {
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+.user-project-group {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    align-content: start;
+    background-color: lightgrey;
+} 
+
+
+.user-project-group .user-pic {
+    grid-row: span 2;
+    align-self: center;
+}
+
+.user-project-group .user-tag {
+    align-self: end;
+}
+
 .footer {
     background-color: pink;
 }
