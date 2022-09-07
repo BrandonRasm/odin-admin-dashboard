@@ -75,10 +75,6 @@
     gap: 20px;
 }
 
-
-
-
-
 .content {
     background-color: aqua;
     display: grid;
@@ -89,11 +85,15 @@
 .projects {
     background-color: lightpink;
     grid-row: span 2;
+    
+}
+.content>div {
     display: grid;
     grid-template-rows: auto 1fr;
     padding: 15px 30px;
     gap: 20px;
 }
+
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -121,20 +121,50 @@
     grid-template-columns: auto auto auto;
     justify-content: end;
 }
-.card-title {
-}
+
+
+
+
+
+
+
 .announcements {
     background-color: bisque;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
+
+.announce-wrapper {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: azure;
+}
+
+.announcement {
+    padding: 10px;
+}
+
+.announcement-title {
+    margin-bottom: 6px;
+}
+
+.announcement-text {
+    overflow: hidden;
+    max-height: 70px;
+}
+
+.announcement:not(:first-child):not(:last-child) {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+
+
+
 
 .trending {
     background-color: lightgreen;
 }
-
-
-
-
-
 
 .footer {
     background-color: pink;
