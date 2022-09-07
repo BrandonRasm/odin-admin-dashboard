@@ -99,9 +99,9 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    justify-content: start;
+    justify-content: center;
     justify-items: stretch;
-    align-items: center;
+    align-items: start;
 
 }
 .card {
