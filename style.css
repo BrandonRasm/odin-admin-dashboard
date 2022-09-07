@@ -101,7 +101,7 @@
     gap: 20px;
     justify-content: center;
     justify-items: stretch;
-    align-items: start;
+    align-items: stretch;
 
 }
 .card {
@@ -110,7 +110,7 @@
     grid-template-rows: auto 1fr auto;
     gap: 2px;
     padding: 10px;
-    height: 200px;
+    max-height: 300px;
 }
 
 .card-text {
@@ -164,18 +164,20 @@
 
 .trending {
     background-color: lightgreen;
+    
 }
 
 .trending .wrapper {
     display: grid;
     grid-template-rows: repeat(4,1fr);
+    background-color: pink;
 }
 .user-project-group {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: start;
     align-content: start;
-    background-color: lightgrey;
+    
 } 
 
 
