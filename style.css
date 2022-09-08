@@ -12,7 +12,7 @@
 }
 
 .sidebar {
-    background-color: teal;
+    background-color: var(--sidebar-color);
     padding: 16px;
     grid-row: span 4;
     display: grid;
@@ -20,16 +20,18 @@
     gap: 10px;
     align-items: center;
     align-content: center;
+    color: var(--sidebar-text-color);
 }
 
 .header {
     padding: 15px 30px;
-    background-color: lightgreen;
+    background-color: var(--header-color);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1.5fr;
     align-items: center;
     column-gap: 50px;
+    color: var(--sidebar-text-color);
 }
 .header-search {
     display: grid;
@@ -40,12 +42,11 @@
 .header-search input {
     height: 25px;
     border-radius: 8px;
-    border: 0px white;
-    background-color: #eeeeee;
+    border: 0px #FA9494;
+    background-color: var(--background-color);
     padding: 0px 8px;
 }
 .header-icons {
-    
     display: grid;
     grid-template-columns: auto auto max-content;
     justify-content: right;
@@ -76,14 +77,13 @@
 }
 
 .content {
-    background-color: aqua;
+    background-color: var(--background-color);
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto auto;
 }
 
 .projects {
-    background-color: lightpink;
     grid-row: span 2;
 }
 .content>div {
@@ -100,7 +100,7 @@
     gap: 20px;
 }
 .card {
-    background-color: aliceblue;
+    background-color: var(--card-color);
     display: grid;
     grid-template-rows: auto 1fr auto;
     gap: 2px;
@@ -124,7 +124,6 @@
 
 
 .announcements {
-    background-color: bisque;
     display: grid;
     grid-template-rows: auto 1fr;
 }
@@ -132,7 +131,6 @@
 .announcements .wrapper {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    background-color: azure;
 }
 
 .announcement {
@@ -158,14 +156,17 @@
 
 
 .trending {
-    background-color: lightgreen;
     
+}
+
+.wrapper {
+    background-color: var(--card-color);
 }
 
 .trending .wrapper {
     display: grid;
     grid-template-rows: repeat(4,1fr);
-    background-color: pink;
+    
 }
 .user-project-group {
     display: grid;
@@ -186,7 +187,7 @@
 }
 
 .footer {
-    background-color: pink;
+    background-color: var(--header-color);
 }
 .icon {
     height: 20px;
@@ -234,9 +235,9 @@ li{
 }
 
 .button {
-    background-color: lightblue;
+    background-color: var(--sidebar-color);
     border-radius: 14px;
-    border: 2px lightblue;
+    border: 2px var(--sidebar-color);
     height: 50px;
     width: 100px;
     font-size: 20px;
@@ -244,6 +245,22 @@ li{
 }
 
 .button:hover{
-    background-color: lightcyan;
+    background-color: #DDDDDD;
     color: black;
 }
+
+*{
+    --header-color:#F9F3F3;
+    --background-color:  #F7D9D9;
+    --card-color: #F9F3F3;
+    --sidebar-color: #F25287;
+    --sidebar-text-color:  black;
+}
+
+/* 
+color pallette: https://colorhunt.co/palette/ddddddf9f3f3f7d9d9f25287
+grey: #DDDDDD
+cream: #F9F3F3
+light pink: #F7D9D9
+red: #F25287
+*/
