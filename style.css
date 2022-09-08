@@ -47,7 +47,7 @@
 .header-icons {
     
     display: grid;
-    grid-template-columns: auto .3fr max-content;
+    grid-template-columns: auto auto max-content;
     justify-content: right;
     align-items: center;
     gap: 16px;
